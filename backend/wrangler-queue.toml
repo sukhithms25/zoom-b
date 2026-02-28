@@ -1,0 +1,7 @@
+name = "zoom-queue-worker"
+main = "src/queue.ts"
+compatibility_date = "2024-01-01"
+
+[[queues.consumers]]
+queue = "transcript-jobs"
+max_batch_size = 5

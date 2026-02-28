@@ -1,0 +1,25 @@
+.dev.vars
+node_modules
+.wrangler
+.env
+.env.local
+.env.test
+.env.production
+.env.development
+.env.example
+.env.example.local
+.env.example.test
+.env.example.production
+.env.example.development
+.env.example.local.test
+.env.example.local.production
+.env.example.local.development
+.env.example.test.production
+.env.example.test.development
+.env.example.production.development
+
+# Secrets & Test Scripts
+test_openai.js
+test_*.js
+wrangler.toml
+.dev.vars

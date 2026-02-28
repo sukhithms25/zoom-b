@@ -1,0 +1,1 @@
+{"error": "speech_model is deprecated. Use \"speech_models\" instead. See documentation: https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model"}

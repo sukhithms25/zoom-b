@@ -1,0 +1,29 @@
+name = "zoom-api-worker"
+main = "src/app.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+ENVIRONMENT = "production"
+[[d1_databases]]
+binding = "DB"
+database_name = "zoom_d1_db"
+database_id = "e7288d72-1822-4042-b631-c8c16d5eebab"
+
+[[kv_namespaces]]
+binding = "OAUTH_KV"
+id = "e0efa515b61445a1bf836e9e0462e130"
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "zoom-recordings"
+
+[[queues.producers]]
+binding = "JOB_QUEUE"
+queue = "transcript-jobs"
+
+[[queues.consumers]]
+queue = "transcript-jobs"
+
+# [[vectorize]]
+# binding = "VECTOR_INDEX"
+# index_name = "transcript-vector-index"
