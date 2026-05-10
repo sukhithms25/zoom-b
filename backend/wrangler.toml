@@ -8,6 +8,7 @@ ENVIRONMENT = "production"
 binding = "DB"
 database_name = "zoom_d1_db"
 database_id = "e7288d72-1822-4042-b631-c8c16d5eebab"
+migrations_dir = "src/infrastructure/d1/migrations"
 
 [[kv_namespaces]]
 binding = "OAUTH_KV"

@@ -28,7 +28,7 @@ export async function router(request: Request, env: Env): Promise<Response> {
     return handleEmailRoutes(request, env);
   }
 
-  if (url.pathname === "/health") {
+  if (url.pathname === "/" || url.pathname === "/health") {
     return new Response(JSON.stringify({ status: "ok" }), {
       headers: { "Content-Type": "application/json" },
     });

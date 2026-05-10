@@ -9,9 +9,12 @@ CREATE TABLE transcripts (
     id TEXT PRIMARY KEY,
     user_id TEXT,
     zoom_meeting_id TEXT,
-    status TEXT,
+    r2_key TEXT,
+    transcript TEXT,
     summary TEXT,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    status TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
 CREATE TABLE usage_logs (
@@ -19,5 +22,6 @@ CREATE TABLE usage_logs (
     user_id TEXT,
     tokens INTEGER,
     model TEXT,
-    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
